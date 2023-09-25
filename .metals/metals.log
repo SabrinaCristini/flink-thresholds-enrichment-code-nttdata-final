@@ -1,0 +1,200 @@
+2023.09.13 10:58:08 INFO  Started: Metals version 1.0.1 in folders '/home/sabrinacs/thresholds_enrichment_final_v1' for client Visual Studio Code 1.73.1.
+Sep 13, 2023 10:58:09 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 13, 2023 10:58:09 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 13, 2023 10:58:09 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 13, 2023 10:58:10 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/sabrinacs/thresholds_enrichment_final_v1/.metals/metals (H2 2.1)
+Sep 13, 2023 10:58:10 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Sep 13, 2023 10:58:10 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.051s)
+Sep 13, 2023 10:58:10 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Sep 13, 2023 10:58:10 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Sep 13, 2023 10:58:10 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Sep 13, 2023 10:58:11 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Sep 13, 2023 10:58:11 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Sep 13, 2023 10:58:11 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Sep 13, 2023 10:58:11 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.064s)
+2023.09.13 10:58:11 INFO  time: initialize in 2.97s
+2023.09.13 10:58:13 WARN  Build server is not auto-connectable.
+2023.09.13 10:58:13 WARN  no build target for: /home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 10:58:22 INFO  no build target found for /home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.13 10:58:32 INFO  time: code lens generation in 14s
+2023.09.13 10:59:36 WARN  no build target for: /home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/EnrichmentTopics.scala
+2023.09.13 11:00:22 INFO  running '/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals8632662993377345503/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.09.13 11:00:23 WARN  no build target for: /home/sabrinacs/thresholds_enrichment_final_v1/project/project/metals.sbt
+2023.09.13 11:00:23 INFO  skipping build import with status 'Started'
+2023.09.13 11:00:32 INFO  [info] welcome to sbt 1.6.2 (Private Build Java 1.8.0_382)
+2023.09.13 11:00:42 INFO  [info] loading settings for project thresholds_enrichment_final_v1-build-build-build from metals.sbt ...
+2023.09.13 11:00:46 INFO  [info] loading project definition from /home/sabrinacs/thresholds_enrichment_final_v1/project/project/project
+2023.09.13 11:00:54 INFO  [info] loading settings for project thresholds_enrichment_final_v1-build-build from metals.sbt ...
+2023.09.13 11:00:54 INFO  [info] loading project definition from /home/sabrinacs/thresholds_enrichment_final_v1/project/project
+2023.09.13 11:01:03 INFO  [success] Generated .bloop/thresholds_enrichment_final_v1-build-build.json
+2023.09.13 11:01:03 INFO  [success] Total time: 9 s, completed Sep 13, 2023 11:01:04 AM
+2023.09.13 11:01:07 INFO  [info] loading settings for project thresholds_enrichment_final_v1-build from metals.sbt,plugins.sbt ...
+2023.09.13 11:01:07 INFO  [info] loading project definition from /home/sabrinacs/thresholds_enrichment_final_v1/project
+2023.09.13 11:01:13 INFO  [success] Generated .bloop/thresholds_enrichment_final_v1-build.json
+2023.09.13 11:01:13 INFO  [success] Total time: 6 s, completed Sep 13, 2023 11:01:13 AM
+2023.09.13 11:01:20 ERROR /home/sabrinacs/thresholds_enrichment_final_v1/build.sbt:32: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+2023.09.13 11:01:20 ERROR assemblyMergeStrategy in assembly := {
+2023.09.13 11:01:20 ERROR                       ^
+2023.09.13 11:01:23 INFO  [info] loading settings for project root from build.sbt ...
+2023.09.13 11:01:23 INFO  [info] set current project to enrichment (in build file:/home/sabrinacs/thresholds_enrichment_final_v1/)
+2023.09.13 11:01:28 INFO  [success] Generated .bloop/root-test.json
+2023.09.13 11:01:28 INFO  [success] Generated .bloop/root.json
+2023.09.13 11:01:28 INFO  [success] Total time: 4 s, completed Sep 13, 2023 11:01:28 AM
+2023.09.13 11:01:29 INFO  time: ran 'sbt bloopInstall' in 1m6s
+2023.09.13 11:01:29 INFO  Attempting to connect to the build server...
+2023.09.13 11:01:29 INFO  Bloop uses /usr/lib/jvm/java-1.8.0-openjdk-amd64 defined at /home/sabrinacs/.bloop/bloop.json
+2023.09.13 11:01:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/sabrinacs/thresholds_enrichment_final_v1/.metals/bsp.trace.json or /home/sabrinacs/.cache/metals/bsp.trace.json
+2023.09.13 11:01:37 INFO  Attempting to connect to the build server...
+2023.09.13 11:01:37 INFO  Bloop uses /usr/lib/jvm/java-1.8.0-openjdk-amd64 defined at /home/sabrinacs/.bloop/bloop.json
+2023.09.13 11:01:37 INFO  Attempting to connect to the build server...
+2023.09.13 11:01:37 INFO  Bloop uses /usr/lib/jvm/java-1.8.0-openjdk-amd64 defined at /home/sabrinacs/.bloop/bloop.json
+2023.09.13 11:01:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/sabrinacs/thresholds_enrichment_final_v1/project/project/.metals/bsp.trace.json or /home/sabrinacs/.cache/metals/bsp.trace.json
+2023.09.13 11:01:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/sabrinacs/thresholds_enrichment_final_v1/project/.metals/bsp.trace.json or /home/sabrinacs/.cache/metals/bsp.trace.json
+2023.09.13 11:01:38 INFO  time: Connected to build server in 8.94s
+2023.09.13 11:01:38 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.13 11:01:39 INFO  time: Imported build in 0.88s
+2023.09.13 11:01:43 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/src.zip. Java symbols will not be available.
+2023.09.13 11:01:51 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/src.zip. Java symbols will not be available.
+2023.09.13 11:01:51 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/src.zip. Java symbols will not be available.
+2023.09.13 11:01:51 INFO  time: indexed workspace in 12s
+2023.09.13 11:01:55 INFO  compiling root (7 scala sources)
+2023.09.13 11:02:28 INFO  time: compiled root in 32s
+Sep 13, 2023 11:02:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-02-33-741
+2023.09.13 11:02:33 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:03:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-03-26-379
+2023.09.13 11:03:26 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:08:47 INFO  compiling root (1 scala source)
+2023.09.13 11:08:54 INFO  time: compiled root in 7.06s
+Sep 13, 2023 11:08:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-08-56-930
+2023.09.13 11:08:56 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:09:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-09-31-523
+2023.09.13 11:09:31 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:09:31 INFO  compiling root (1 scala source)
+2023.09.13 11:09:39 INFO  time: compiled root in 7.63s
+Sep 13, 2023 11:09:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-09-41-126
+2023.09.13 11:09:41 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:10:32 INFO  compiling root (1 scala source)
+Sep 13, 2023 11:10:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-10-34-304
+2023.09.13 11:10:34 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:10:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-10-36-953
+2023.09.13 11:10:36 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:10:41 INFO  time: compiled root in 8.82s
+Sep 13, 2023 11:10:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-10-42-730
+2023.09.13 11:10:42 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:10:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-10-45-094
+2023.09.13 11:10:45 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:10:53 INFO  compiling root (1 scala source)
+2023.09.13 11:10:53 INFO  time: compiled root in 0.63s
+Sep 13, 2023 11:10:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-10-54-910
+2023.09.13 11:10:54 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:10:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-10-56-843
+2023.09.13 11:10:56 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:11:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-12-513
+2023.09.13 11:11:12 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:11:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-14-357
+2023.09.13 11:11:14 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:11:15 INFO  compiling root (1 scala source)
+2023.09.13 11:11:15 INFO  time: compiled root in 0.6s
+Sep 13, 2023 11:11:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-16-574
+2023.09.13 11:11:16 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:11:18 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-18-354
+2023.09.13 11:11:18 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:11:20 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-20-206
+2023.09.13 11:11:20 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:11:33 INFO  compiling root (1 scala source)
+Sep 13, 2023 11:11:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-33-740
+2023.09.13 11:11:33 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:11:39 INFO  time: compiled root in 6.67s
+Sep 13, 2023 11:11:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-11-41-115
+2023.09.13 11:11:41 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:06 INFO  compiling root (1 scala source)
+Sep 13, 2023 11:12:06 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-06-911
+2023.09.13 11:12:06 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:07 WARN  Could not load snapshot text for /home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:12:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-09-444
+2023.09.13 11:12:09 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:10 WARN  Could not load snapshot text for /home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:11 WARN  Could not load snapshot text for /home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:12:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-12-736
+2023.09.13 11:12:12 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:13 INFO  time: compiled root in 7.34s
+Sep 13, 2023 11:12:15 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-15-130
+2023.09.13 11:12:15 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 13, 2023 11:12:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-16-703
+2023.09.13 11:12:16 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:25 INFO  compiling root (1 scala source)
+Sep 13, 2023 11:12:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-25-843
+2023.09.13 11:12:25 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.13 11:12:31 INFO  time: compiled root in 5.84s
+Sep 13, 2023 11:12:32 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-13/r_compiler-error_11-12-32-966
+2023.09.13 11:12:32 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+2023.09.24 23:07:56 INFO  Started: Metals version 1.0.1 in folders '/home/sabrinacs/thresholds_enrichment_final_v1' for client Visual Studio Code 1.73.1.
+Sep 24, 2023 11:07:56 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 24, 2023 11:07:56 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 24, 2023 11:07:56 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 24, 2023 11:08:01 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/sabrinacs/thresholds_enrichment_final_v1/.metals/metals (H2 2.1)
+Sep 24, 2023 11:08:01 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.046s)
+Sep 24, 2023 11:08:01 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 24, 2023 11:08:01 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.24 23:08:02 INFO  time: initialize in 5.77s
+2023.09.24 23:08:03 INFO  Attempting to connect to the build server...
+2023.09.24 23:08:03 INFO  Bloop uses /usr/lib/jvm/java-1.8.0-openjdk-amd64 defined at /home/sabrinacs/.bloop/bloop.json
+2023.09.24 23:08:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/sabrinacs/thresholds_enrichment_final_v1/.metals/bsp.trace.json or /home/sabrinacs/.cache/metals/bsp.trace.json
+2023.09.24 23:08:05 INFO  time: Connected to build server in 2.16s
+2023.09.24 23:08:05 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.24 23:08:05 INFO  time: Imported build in 0.2s
+2023.09.24 23:08:10 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/src.zip. Java symbols will not be available.
+2023.09.24 23:08:10 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/src.zip. Java symbols will not be available.
+2023.09.24 23:08:11 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/src.zip, /usr/lib/jvm/java-1.8.0-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/lib/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/src.zip, /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/src.zip. Java symbols will not be available.
+2023.09.24 23:08:11 INFO  time: indexed workspace in 5.88s
+Sep 24, 2023 11:08:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-24/r_compiler-error_23-08-22-692
+2023.09.24 23:08:22 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala
+Sep 24, 2023 11:08:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/sabrinacs/thresholds_enrichment_final_v1/.metals/.reports/metals-full/2023-09-24/r_compiler-error_23-08-26-506
+2023.09.24 23:08:26 WARN  Could not find semantic tokens for: file:///home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala

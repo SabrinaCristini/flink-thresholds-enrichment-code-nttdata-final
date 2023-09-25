@@ -1,0 +1,108 @@
+################################################################################
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+# limitations under the License.
+################################################################################
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: enrichment-thresholds-config
+data:
+  config.json: |
+    {
+      "KafkaConfig":{
+        "kafkaBroker":"kafka-safira-kafka-bootstrap.safira-amq-streams.svc:9094",
+        "autoCommit": "false" 
+    }, 
+      "kafkaTopicsConfiguration":{
+        "topicsFields": [
+            {
+                "topicName":"topico-1-netcompass",
+                "topicKey": "$.topology.hostname",
+                "renameTopicKey":"hostname",
+                "OffsetsInitializer": "earliest"
+            },
+            {
+                "topicName":"topico-2-thresholds",
+                "topicKey":"$.alarmedObjectId",
+                "renameTopicKey":"alarmedObjectId",
+                "OffsetsInitializer": "latest"
+            },
+            {
+               "outputNameTopic": "topico-4-thresholds-netcompass"
+             }         
+        ]    
+    },
+    "SecurityProtocols":{
+        "security_protocol" : "SASL_SSL",
+        "trustore_location" : "/flink/kafka/keystore.jks",
+        "trustore_password" : "safira",
+        "keystore_location" : "/flink/kafka/keystore.jks",
+        "keystore_password" : "safira",
+        "sasl_mechanism" : "SCRAM-SHA-512",
+        "jaas_config" :"org.apache.kafka.common.security.scram.ScramLoginModule required username='kafka-connect' password='jS4eYOkvrQDN';"
+      }
+    }
+
+---
+
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:
+  name: flink-thresholds-enrichment
+spec:
+  image: teste-thresholds-oficial:0.0.20
+  flinkVersion: v1_16
+  flinkConfiguration:
+    taskmanager.numberOfTaskSlots: "2"
+    state.savepoints.dir: file:///flink-data/savepoints
+    state.checkpoints.dir: file:///flink-data/checkpoints
+    #high-availability: org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory
+    #high-availability.storageDir: file:///flink-data/ha
+  serviceAccount: flink
+  jobManager:
+    resource:
+      memory: "1024m"
+      cpu: 1
+  taskManager:
+    resource:
+      memory: "2048m"
+      cpu: 1
+  podTemplate:
+    spec:
+      containers:
+        - name: flink-main-container
+          volumeMounts:
+          - mountPath: /flink-data
+            name: flink-volume
+          - name: enrichment-cm-config
+            mountPath: "/opt/flink/app/config"
+
+      volumes:
+      - name: flink-volume
+        hostPath:
+          # directory location on host
+          path: /opt/flink/data
+      - name: enrichment-cm-config
+        configMap :
+          name: enrichment-thresholds-config  
+
+  job:
+    jarURI: local:///opt/flink//app/flink-enrichment.jar
+    args: [--process-type, Enrequecimento, --kafka-brokers, "kafka-helm-0.kafka-helm-headless.kafkav1.svc.cluster.local:9092,kafka-helm-1.kafka-helm-headless.kafkav1.svc.cluster.local:9092"]
+    parallelism: 1
+    upgradeMode: savepoint
+    state: running
+    savepointTriggerNonce: 0

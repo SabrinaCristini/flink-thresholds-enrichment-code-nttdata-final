@@ -1,0 +1,41 @@
+{
+    "KafkaConfig":{
+        "kafkaBroker":"kafka-safira-kafka-bootstrap.safira-amq-streams.svc:9094",
+        "autoCommit": "false" 
+
+    }, 
+    "kafkaTopicsConfiguration":{
+        "topicsFields": [
+            {
+                "topicName":"safira-ingestion-netcompass",
+                "topicKey": "$.topology.hostname",
+                "renameTopicKey":"hostname",
+                "OffsetsInitializer": "earliest"
+
+            },
+            {
+                "topicName":"fastoss-fm-events",
+                "topicKey":"$.alarmedObjectId",
+                "renameTopicKey":"alarmedObjectId",
+                "OffsetsInitializer": "latest"
+            },
+            {
+               "outputNameTopic": "enrichment-thresholds-netcompass"
+             }         
+        ]    
+    },
+    "SecurityProtocols":{
+        "security_protocol" : "SASL_SSL",
+        "trustore_location" : "/flink/kafka/keystore.jks",
+        "trustore_password" : "safira",
+        "keystore_location" : "/flink/kafka/keystore.jks",
+        "keystore_password" : "safira",
+        "sasl_mechanism" : "SCRAM-SHA-512",
+        "jaas_config" :"org.apache.kafka.common.security.scram.ScramLoginModule required username='kafka-connect' password='jS4eYOkvrQDN';"
+    }
+    
+}
+
+
+
+

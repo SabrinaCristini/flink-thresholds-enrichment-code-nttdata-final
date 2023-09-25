@@ -1,0 +1,10 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala:121:30: Type Any has no fields that are visible from Scala Type analysis. Falling back to Java Type Analysis (TypeExtractor).[0m
+[0m[[0m[33mwarn[0m] [0m[0m        createTypeInformation[Map[String, Any]][0m
+[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/Enrichment.scala:169:30: Type Any has no fields that are visible from Scala Type analysis. Falling back to Java Type Analysis (TypeExtractor).[0m
+[0m[[0m[33mwarn[0m] [0m[0m        createTypeInformation[Map[String, Any]][0m
+[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala/Pipelines/EnrichmentTopics.scala:25:30: Type Any has no fields that are visible from Scala Type analysis. Falling back to Java Type Analysis (TypeExtractor).[0m
+[0m[[0m[33mwarn[0m] [0m[0m        createTypeInformation[(String, Map[String, Any])]))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

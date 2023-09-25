@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: play-json
+Specification-Version: 2.9.2
+Specification-Vendor: Lightbend Inc.
+Implementation-Title: play-json
+Implementation-Version: 2.9.2
+Implementation-Vendor: Lightbend Inc.
+Implementation-Vendor-Id: com.typesafe.play
+Implementation-URL: https://github.com/playframework/play-json
+
