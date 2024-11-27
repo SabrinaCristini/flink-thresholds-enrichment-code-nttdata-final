@@ -1,0 +1,95 @@
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:  
+  labels:
+    gitops.application.instance: flink-enrichment-threshold
+  name: flink-thresholds-enrichment  
+spec:
+  flinkConfiguration:
+    checkpointing.interval: "10000"
+    checkpointing.mode: exactly_once
+    env.java.opts: -XX:+UnlockCommercialFeatures -XX:+UnlockDiagnosticVMOptions -XX:+FlightRecorder
+      -XX:+DebugNonSafepoints -XX:StartFlightRecording=disk=false,dumponexit=true,filename='/tmp/flight.jfr',settings=profile,path-to-gc-roots=true,duration=1h
+    execution.checkpointing.externalized-checkpoint-retention: RETAIN_ON_CANCELLATION
+    execution.checkpointing.interval: 5m
+    execution.checkpointing.min-pause: 2m
+    execution.checkpointing.timeout: 2m
+    restart-strategy.fixed-delay.attempts: "3"
+    restart-strategy.fixed-delay.delay: 10s
+    restart-strategy.type: fixed-delay
+    s3.access-key: gcJLmhZgTTYPCqPPdsab
+    s3.bucket-name: flink-thresholds-enrichment
+    s3.endpoint: http://minio-dev.panda-symphony-dev.svc.cluster.local:9000
+    s3.path-style: "true"
+    s3.path.style.access: "true"
+    s3.secret-key: Uuhugv3vx8R45kg52FSpF3nXyuq2cLNByIqtkuD9
+    state.backend: rocksdb
+    state.backend.incremental: "true"
+    state.checkpoints.dir: s3://flink-thresholds-enrichment-prod/flink-thresholds/checkpoints
+    state.savepoints.dir: s3://flink-thresholds-enrichment-prod/flink-thresholds/savepoints
+    taskmanager.memory.network.fraction: "0.30"
+    taskmanager.memory.network.max: 16264MB
+    taskmanager.memory.network.min: 6MB
+    taskmanager.numberOfTaskSlots: "40"
+    pekko.ask.timeout: "5m"
+  flinkVersion: v1_16
+  image: quay.apps.mgmt.tdigital-vivo.com.br/panda_pipelines0/panda-thresholds-enrichment-prod:0.0.15
+  job:
+    args:
+    - --process-type
+    - Enrequecimento
+    - --kafka-brokers
+    - amqstreams-kafka-bootstrap.panda-amq-streams.svc.cluster.local:9094
+    - --kafka-enable-ssl
+    - "true"
+    - --truststore-location
+    - /flink/kafka/keystore.jks
+    - --keystore-location
+    - /flink/kafka/keystore.jks
+    - --truststore-password
+    - p4nd4pr0d2023
+    - --keystore-password
+    - p4nd4pr0d2023
+    - --sasl-mechanism
+    - SCRAM-SHA-512
+    - --jaas-config
+    - org.apache.kafka.common.security.scram.ScramLoginModule required username="flink"
+      password="NMoW680oSNitVesBQti9jlsjl7GC8u36";
+    jarURI: local:///opt/flink//app/flink-enrichment.jar
+    parallelism: 10
+    savepointTriggerNonce: 0
+    state: running
+    upgradeMode: savepoint
+  jobManager:
+    replicas: 1
+    resource:
+      cpu: 2
+      memory: 16084m
+  podTemplate:
+    apiVersion: v1
+    kind: Pod
+    spec:
+      containers:
+      - name: flink-main-container
+        volumeMounts:
+        - mountPath: /flink/kafka
+          name: kafka-keystore
+        - mountPath: /opt/flink/app/config
+          name: enrichment-cm-config
+      imagePullSecrets:
+      - name: quay-flink-thresholds-enrichment
+      volumes:
+      - name: kafka-keystore
+        secret:
+          items:
+          - key: keystore.jks
+            path: keystore.jks
+          secretName: kafka-keystore-prod
+      - configMap:
+          name: enrichment-thresholds-config-prod
+        name: enrichment-cm-config
+  serviceAccount: flink-prod
+  taskManager:
+    resource:
+      cpu: 1
+      memory: 2048m

@@ -1,2 +1,2 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/sabrinacs/thresholds_enrichment_final_v1/project/target/scala-2.12/sbt-1.0/classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/sabrinacs/thresholds_enrichment_final_v1/project/target/scala-2.12/sbt-1.0/classes.bak[0m
+[debug] Created transactional ClassFileManager with tempDir = /home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/project/target/scala-2.12/sbt-1.0/classes.bak
+[debug] Removing the temporary directory used for backing up class files: /home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/project/target/scala-2.12/sbt-1.0/classes.bak

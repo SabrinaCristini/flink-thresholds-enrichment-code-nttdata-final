@@ -18,24 +18,24 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: enrichment-thresholds-config
+  name: enrichment-thresholds-config-prd24
 data:
   config.json: |
     {
       "KafkaConfig":{
-        "kafkaBroker":"amqstreams-kafka-external-bootstrap-panda-amq-streams-dev.apps.ocp-01.tdigital-vivo.com.br:443",
+        "kafkaBroker":"amqstreams-kafka-bootstrap.panda-amq-streams.svc.cluster.local:9094",
         "autoCommit": "false" 
     }, 
       "kafkaTopicsConfiguration":{
         "topicsFields": [
             {
                 "topicName":"safira-ingestion-netcompass",
-                "topicKey": "$.topology.hostname",
-                "renameTopicKey":"hostname",
+                "topicKey": "$.topology.HOSTNAME",
+                "renameTopicKey":"HOSTNAME",
                 "OffsetsInitializer": "earliest"
             },
             {
-                "topicName":"fastoss-fm-events",
+                "topicName":"fastoss-fm-externalfm",
                 "topicKey":"$.alarmedObjectId",
                 "renameTopicKey":"alarmedObjectId",
                 "OffsetsInitializer": "latest"
@@ -48,11 +48,11 @@ data:
     "SecurityProtocols":{
         "security_protocol" : "SASL_SSL",
         "trustore_location" : "/flink/kafka/keystore.jks",
-        "trustore_password" : "p4nd4d3v2023",
+        "trustore_password" : "p4nd4pr0d2023",
         "keystore_location" : "/flink/kafka/keystore.jks",
-        "keystore_password" : "p4nd4d3v2023",
-        "sasl_mechanism" : "SCRAM-SHA-512",
-        "jaas_config" :"org.apache.kafka.common.security.scram.ScramLoginModule required username='kafka-connect' password='jS4eYOkvrQDN';"
+        "keystore_password" : "p4nd4pr0d2023",
+        "sasl_mechanism" : "SCRAM-SHA-512", 
+        "jaas_config" : "org.apache.kafka.common.security.scram.ScramLoginModule required username='flink' password='NMoW680oSNitVesBQti9jlsjl7GC8u36';"
       }
     }
     
@@ -63,100 +63,97 @@ kind: FlinkDeployment
 metadata:
   name: flink-thresholds-enrichment
 spec:
-  image: quay.apps.mgmt.telcostack.br.telefonica.com/safira/enrichmentflink:0.0.2
+  image: quay.apps.mgmt.tdigital-vivo.com.br/panda_pipelines0/panda-thresholds-enrichment:1.0.7
   podTemplate:
     spec:
       imagePullSecrets:
-        - name: "quay-secret-flink"
+        - name: quay-flink-thresholds-enrichment
       securityContext:
-        fsGroup: 1000
-        runAsUser: 1000
-        runAsGroup: 1000
+        fsGroup: 1001450000
+        runAsUser: 1001450000
       containers:
           # Do not change the main container name
           - name: flink-main-container
             volumeMounts:
               - mountPath: /flink/kafka
-                name: "kafka-keystore"
+                name: kafka-keystore
               - name: enrichment-cm-config
-                mountPath: "/opt/flink/app/config"
+                mountPath: /opt/flink/app/config
       volumes:
-        - name: "kafka-keystore"
+        - name: kafka-keystore
           secret:
-            secretName: "kafka-keystore"
+            secretName: kafka-keystore-prod
             items:
               - key: keystore.jks
                 path: keystore.jks   
         - name: enrichment-cm-config
           configMap :
-            name: enrichment-thresholds-config   
+            name: enrichment-thresholds-config-prd24   
   
   flinkVersion: v1_16
   flinkConfiguration:
-    #taskmanager.numberOfTaskSlots: "2"
-
-    # Enable checkpointing
-    checkpointing.mode: exactly_once
-
-    # Set the checkpoint interval to 10 seconds
     checkpointing.interval: "10000"
-
-    state.savepoints.dir: s3://flink-data-d0aaf2ba-40e3-4fa4-ae49-544e1cf9e744/flink-enrichment-thresholds/savepoints
-    state.checkpoints.dir: s3://flink-data-d0aaf2ba-40e3-4fa4-ae49-544e1cf9e744/flink-enrichment-thresholds/checkpoints
-    state.backend: rocksdb
-    state.backend.incremental: "true"
-
+    checkpointing.mode: exactly_once
     execution.checkpointing.interval: 5m
     execution.checkpointing.min-pause: 2m
     execution.checkpointing.timeout: 2m
-
+    execution.checkpointing.externalized-checkpoint-retention: RETAIN_ON_CANCELLATION
     restart-strategy.type: fixed-delay
     restart-strategy.fixed-delay.attempts: "3"
     restart-strategy.fixed-delay.delay: 10s
+    s3.access-key: gcJLmhZgTTYPCqPPdsab
+    s3.bucket-name: flink-thresholds-enrichment
+    s3.endpoint: http://minio-dev.panda-symphony-dev.svc.cluster.local:9000
+    s3.path-style: "true"
+    s3.path.style.access: "true"
+    s3.secret-key: Uuhugv3vx8R45kg52FSpF3nXyuq2cLNByIqtkuD9
+    state.backend: rocksdb
+    state.backend.incremental: "true"
+    state.checkpoints.dir: s3://flink-thresholds-enrichment/flink-thresholds-enrichment/checkpoints
+    state.savepoints.dir: s3://flink-thresholds-enrichment/flink-thresholds-enrichment/savepoints
+    taskmanager.memory.network.fraction: "0.30"
+    taskmanager.memory.network.max: 16264MB
+    taskmanager.memory.network.min: 6MB
+    taskmanager.numberOfTaskSlots: "40"
+    pekko.ask.timeout: "5m"
 
-    execution.checkpointing.externalized-checkpoint-retention: RETAIN_ON_CANCELLATION
-    # execution.checkpointing.tolerable-failed-checkpoints: "3"
-
-    s3.bucket-name: flink-data
-    s3.endpoint: http://10.215.39.100:80
-    s3.access-key: A205X6DXU1B1RUDXKSFA
-    s3.secret-key: g4nQq9OCpw7N27qV96RnylZuFBrXVmSIksItQO2S
-
-  serviceAccount: flink
+  serviceAccount: flink-prod
   jobManager:
+    replicas: 1
     resource:
-      memory: "32084m"
-      cpu: 4
+      memory: "16084m"
+      cpu: 2
   taskManager:
     resource:
-      memory: "4048m"
-      cpu: 2
+      memory: "2048m"
+      cpu: 1
   job:
-    jarURI: local:///opt/flink//app/flink-enrichment.jar
-    args: [--process-type, Enrequecimento, --kafka-brokers, "amqstreams-kafka-external-bootstrap-panda-amq-streams-dev.apps.ocp-01.tdigital-vivo.com.br:443", --trustore-location, /flink/kafka/keystore.jks, --keystore-location, /flink/kafka/keystore.jks, --trustore-password, p4nd4d3v2023, --keystore-password, p4nd4d3v2023, --sasl-mechanism, "SCRAM-SHA-512", --jaas-config, org.apache.kafka.common.security.scram.ScramLoginModule required username='flink' password='NMoW680oSNitVesBQti9jlsjl7GC8u36';]
-    parallelism: 20
+    jarURI: local:///opt/flink/app/flink-enrichment.jar
+    args: [--process-type, Enrequecimento, --kafka-brokers, "amqstreams-kafka-bootstrap.panda-amq-streams.svc.cluster.local:9094", --trustore-location, /flink/kafka/keystore.jks, --keystore-location, /flink/kafka/keystore.jks, --trustore-password, p4nd4pr0d2023, --keystore-password, p4nd4pr0d2023, --sasl-mechanism, "SCRAM-SHA-512", --jaas-config, org.apache.kafka.common.security.scram.ScramLoginModule required username="flink" password="NMoW680oSNitVesBQti9jlsjl7GC8u36";]
+    parallelism: 10
+    savepointTriggerNonce: 0
     upgradeMode: savepoint
     state: running
-    savepointTriggerNonce: 0
+ 
 
 ---
 
-kind: Route
-apiVersion: route.openshift.io/v1
-metadata:
-  name: flink-enrichment-thresholds-route
-  namespace: safira-flink
-  labels:
-    app: flink
-spec:
-  host: flink-enrichment-thresholds.dev.apps.mvp.telcostackmvp.br.telefonica.com
-  to:
-    kind: Service
-    name: flink-thresholds-enrichment-rest
-    weight: 100
-  port:
-    targetPort: rest
-  tls:
-    termination: edge
-    insecureEdgeTerminationPolicy: None
-  wildcardPolicy: None
+#kind: Route
+#apiVersion: route.openshift.io/v1
+#metadata:
+#  name: flink-enrichment-thresholds-prd-route
+#  namespace: safira-flink
+#  labels:
+#    app: flink
+#spec:
+#  host: flink-enrichment-thresholds.dev.apps.mvp.telcostackmvp.br.telefonica.com
+#  to:
+#    kind: Service
+#    name: flink-thresholds-enrichment-rest
+#   weight: 100
+#  port:
+#    targetPort: rest
+#  tls:
+#    termination: edge
+#    insecureEdgeTerminationPolicy: None
+#  wildcardPolicy: None

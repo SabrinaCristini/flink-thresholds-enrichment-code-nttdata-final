@@ -2,50 +2,51 @@
     "version": "1.4.0",
     "project": {
         "name": "root",
-        "directory": "/home/sabrinacs/thresholds_enrichment_final_v1",
-        "workspaceDir": "/home/sabrinacs/thresholds_enrichment_final_v1",
+        "directory": "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final",
+        "workspaceDir": "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final",
         "sources": [
-            "/home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala",
-            "/home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala-2.12",
-            "/home/sabrinacs/thresholds_enrichment_final_v1/src/main/scala-2",
-            "/home/sabrinacs/thresholds_enrichment_final_v1/src/main/java",
-            "/home/sabrinacs/thresholds_enrichment_final_v1/target/scala-2.12/src_managed/main"
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/src/main/scala",
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/src/main/scala-2.12",
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/src/main/scala-2",
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/src/main/java",
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/target/scala-2.12/src_managed/main"
         ],
         "dependencies": [
             
         ],
         "classpath": [
             "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-library.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-scala_2.12/1.16.0/flink-scala_2.12-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.12/1.16.0/flink-streaming-scala_2.12-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-clients/1.16.0/flink-clients-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka/1.16.0/flink-connector-kafka-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-scala_2.12/1.16.0/flink-scala_2.12-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-streaming-scala_2.12/1.16.0/flink-streaming-scala_2.12-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-clients/1.16.0/flink-clients-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-connector-kafka/1.16.0/flink-connector-kafka-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.12.5/jackson-module-scala_2.12-2.12.5.jar",
+            "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.12.5/jackson-module-scala_2.12-2.12.5.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.19.0/log4j-slf4j-impl-2.19.0.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-json/1.16.0/flink-json-1.16.0.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.2/play-json_2.12-2.9.2.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/4.0.3/json4s-native_2.12-4.0.3.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-jexl3/3.2.1/commons-jexl3-3.2.1.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-core/1.16.0/flink-core-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-java/1.16.0/flink-java-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-core/1.16.0/flink-core-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-java/1.16.0/flink-java-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar",
             "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-reflect.jar",
             "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-compiler.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-runtime/1.16.0/flink-runtime-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-optimizer/1.16.0/flink-optimizer-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-connector-base/1.16.0/flink-connector-base-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar",
+            "/home/sabrinacs/.m2/repository/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6.jar",
+            "/home/sabrinacs/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-runtime/1.16.0/flink-runtime-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-optimizer/1.16.0/flink-optimizer-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-connector-base/1.16.0/flink-connector-base-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3.jar",
+            "/home/sabrinacs/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar",
+            "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar",
+            "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar",
+            "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar",
@@ -55,41 +56,41 @@
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/4.0.3/json4s-core_2.12-4.0.3.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_2.12/4.0.3/json4s-native-core_2.12-4.0.3.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.16.0/flink-annotations-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.16.0/flink-metrics-core-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-jackson/2.12.4-15.0/flink-shaded-jackson-2.12.4-15.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-annotations/1.16.0/flink-annotations-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-metrics-core/1.16.0/flink-metrics-core-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-jackson/2.12.4-15.0/flink-shaded-jackson-2.12.4-15.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar",
+            "/home/sabrinacs/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar",
             "/home/sabrinacs/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar",
+            "/home/sabrinacs/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-file-sink-common/1.16.0/flink-file-sink-common-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-rpc-core/1.16.0/flink-rpc-core-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-rpc-akka-loader/1.16.0/flink-rpc-akka-loader-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.16.0/flink-queryable-state-client-java-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.16.0/flink-hadoop-fs-1.16.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-netty/4.1.70.Final-15.0/flink-shaded-netty-4.1.70.Final-15.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-zookeeper-3/3.5.9-15.0/flink-shaded-zookeeper-3-3.5.9-15.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-file-sink-common/1.16.0/flink-file-sink-common-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-rpc-core/1.16.0/flink-rpc-core-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-rpc-akka-loader/1.16.0/flink-rpc-akka-loader-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-queryable-state-client-java/1.16.0/flink-queryable-state-client-java-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-hadoop-fs/1.16.0/flink-hadoop-fs-1.16.0.jar",
+            "/home/sabrinacs/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-netty/4.1.70.Final-15.0/flink-shaded-netty-4.1.70.Final-15.0.jar",
+            "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-zookeeper-3/3.5.9-15.0/flink-shaded-zookeeper-3-3.5.9-15.0.jar",
+            "/home/sabrinacs/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar",
+            "/home/sabrinacs/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar",
+            "/home/sabrinacs/.m2/repository/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.jar",
+            "/home/sabrinacs/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/4.0.3/json4s-ast_2.12-4.0.3.jar",
             "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/4.0.3/json4s-scalap_2.12-4.0.3.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.jar",
-            "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.1/asm-9.1.jar"
+            "/home/sabrinacs/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar",
+            "/home/sabrinacs/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar",
+            "/home/sabrinacs/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar"
         ],
-        "out": "/home/sabrinacs/thresholds_enrichment_final_v1/.bloop/root",
-        "classesDir": "/home/sabrinacs/thresholds_enrichment_final_v1/.bloop/root/scala-2.12/classes",
+        "out": "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/.bloop/root",
+        "classesDir": "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/.bloop/root/scala-2.12/classes",
         "resources": [
-            "/home/sabrinacs/thresholds_enrichment_final_v1/src/main/resources",
-            "/home/sabrinacs/thresholds_enrichment_final_v1/target/scala-2.12/resource_managed/main"
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/src/main/resources",
+            "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/target/scala-2.12/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -101,8 +102,8 @@
             "jars": [
                 "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-library.jar",
                 "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-reflect.jar",
-                "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-compiler.jar",
-                "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-xml_2.12-1.0.6.jar"
+                "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-xml_2.12-1.0.6.jar",
+                "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-compiler.jar"
             ],
             "setup": {
                 "order": "mixed",
@@ -165,13 +166,58 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/usr/lib/jvm/java-8-openjdk-amd64/jre",
+                "home": "/usr/lib/jvm/java-17-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/sabrinacs/thresholds_enrichment_final_v1"
+                    "-Duser.dir=/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final"
                 ]
             },
             "mainClass": [
                 
+            ],
+            "runtimeConfig": {
+                "home": "/usr/lib/jvm/java-17-openjdk-amd64",
+                "options": [
+                    "-Duser.dir=/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final"
+                ]
+            },
+            "classpath": [
+                "/home/sabrinacs/safira/flink-thresholds-enrichment-code-nttdata-final/.bloop/root/scala-2.12/classes",
+                "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-library.jar",
+                "/home/sabrinacs/.m2/repository/org/apache/flink/flink-connector-kafka/1.16.0/flink-connector-kafka-1.16.0.jar",
+                "/home/sabrinacs/.m2/repository/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2.jar",
+                "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.12.5/jackson-module-scala_2.12-2.12.5.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.19.0/log4j-slf4j-impl-2.19.0.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-json/1.16.0/flink-json-1.16.0.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.9.2/play-json_2.12-2.9.2.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/4.0.3/json4s-native_2.12-4.0.3.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-jexl3/3.2.1/commons-jexl3-3.2.1.jar",
+                "/home/sabrinacs/.m2/repository/org/apache/flink/flink-connector-base/1.16.0/flink-connector-base-1.16.0.jar",
+                "/home/sabrinacs/.m2/repository/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3.jar",
+                "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar",
+                "/home/sabrinacs/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar",
+                "/home/sabrinacs/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar",
+                "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar",
+                "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar",
+                "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.9.2/play-functional_2.12-2.9.2.jar",
+                "/home/sabrinacs/.sbt/boot/scala-2.12.15/lib/scala-reflect.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/4.0.3/json4s-core_2.12-4.0.3.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_2.12/4.0.3/json4s-native-core_2.12-4.0.3.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar",
+                "/home/sabrinacs/.m2/repository/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar",
+                "/home/sabrinacs/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar",
+                "/home/sabrinacs/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/4.0.3/json4s-ast_2.12-4.0.3.jar",
+                "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/4.0.3/json4s-scalap_2.12-4.0.3.jar",
+                "/home/sabrinacs/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar"
             ]
         },
         "resolution": {
@@ -201,12 +247,11 @@
                     "artifacts": [
                         {
                             "name": "flink-connector-kafka",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka/1.16.0/flink-connector-kafka-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-connector-kafka",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-connector-kafka/1.16.0/flink-connector-kafka-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "52a94ce27a60386998fd7b677893af3601fbe849"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-connector-kafka/1.16.0/flink-connector-kafka-1.16.0.jar"
                         }
                     ]
                 },
@@ -218,12 +263,11 @@
                     "artifacts": [
                         {
                             "name": "json-path",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar"
-                        },
-                        {
-                            "name": "json-path",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "67f565b424f7903a12d4f5b9361b11462ecacdac"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/jayway/jsonpath/json-path/2.6.0/json-path-2.6.0.jar"
                         }
                     ]
                 },
@@ -252,12 +296,11 @@
                     "artifacts": [
                         {
                             "name": "jackson-module-scala_2.12",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.12.5/jackson-module-scala_2.12-2.12.5.jar"
-                        },
-                        {
-                            "name": "jackson-module-scala_2.12",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.12.5/jackson-module-scala_2.12-2.12.5-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7ed0906fd380c7df62bc21118f18106704b884a6"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.12.5/jackson-module-scala_2.12-2.12.5.jar"
                         }
                     ]
                 },
@@ -371,12 +414,11 @@
                     "artifacts": [
                         {
                             "name": "flink-connector-base",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-connector-base/1.16.0/flink-connector-base-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-connector-base",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-connector-base/1.16.0/flink-connector-base-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e99b3fd8a8e94a30b7b619d2e20364f8082d7f1c"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-connector-base/1.16.0/flink-connector-base-1.16.0.jar"
                         }
                     ]
                 },
@@ -388,12 +430,11 @@
                     "artifacts": [
                         {
                             "name": "kafka-clients",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3.jar"
-                        },
-                        {
-                            "name": "kafka-clients",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ec1c16f07f8e5b99542a295a1034d9f71ecfef1f"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/kafka/kafka-clients/3.2.3/kafka-clients-3.2.3.jar"
                         }
                     ]
                 },
@@ -405,7 +446,27 @@
                     "artifacts": [
                         {
                             "name": "flink-shaded-force-shading",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "68f5786fa0554e0a567a15bec1618682d1695e80"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "1.3.9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\n"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"
                         }
                     ]
                 },
@@ -417,12 +478,11 @@
                     "artifacts": [
                         {
                             "name": "json-smart",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar"
-                        },
-                        {
-                            "name": "json-smart",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/net/minidev/json-smart/2.4.7/json-smart-2.4.7-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "8d7f4c1530c07c54930935f3da85f48b83b3c109"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar"
                         }
                     ]
                 },
@@ -434,12 +494,11 @@
                     "artifacts": [
                         {
                             "name": "jackson-core",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar"
-                        },
-                        {
-                            "name": "jackson-core",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "725e364cc71b80e60fa450bd06d75cdea7fb2d59"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar"
                         }
                     ]
                 },
@@ -451,12 +510,11 @@
                     "artifacts": [
                         {
                             "name": "jackson-annotations",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar"
-                        },
-                        {
-                            "name": "jackson-annotations",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "52d929d5bb21d0186fe24c09624cc3ee4bafc3b3"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar"
                         }
                     ]
                 },
@@ -468,12 +526,11 @@
                     "artifacts": [
                         {
                             "name": "jackson-databind",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar"
-                        },
-                        {
-                            "name": "jackson-databind",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b064cf057f23d3d35390328c5030847efeffedde"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar"
                         }
                     ]
                 },
@@ -655,12 +712,11 @@
                     "artifacts": [
                         {
                             "name": "zstd-jni",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.jar"
-                        },
-                        {
-                            "name": "zstd-jni",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fad786abc1d1b81570e8d9a2fc8a1ef479bc27b6"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/github/luben/zstd-jni/1.5.2-1/zstd-jni-1.5.2-1.jar"
                         }
                     ]
                 },
@@ -689,12 +745,11 @@
                     "artifacts": [
                         {
                             "name": "snappy-java",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar"
-                        },
-                        {
-                            "name": "snappy-java",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "66f0d56454509f6e36175f2331572e250e04a6cc"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/xerial/snappy/snappy-java/1.1.8.4/snappy-java-1.1.8.4.jar"
                         }
                     ]
                 },
@@ -706,12 +761,11 @@
                     "artifacts": [
                         {
                             "name": "accessors-smart",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar"
-                        },
-                        {
-                            "name": "accessors-smart",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3970cfc505e6657ca60f3aa57c849f6043000d7a"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar"
                         }
                     ]
                 },
@@ -757,12 +811,11 @@
                     "artifacts": [
                         {
                             "name": "asm",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.1/asm-9.1.jar"
-                        },
-                        {
-                            "name": "asm",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.1/asm-9.1-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a99500cf6eea30535eeac6be73899d048f8d12a8"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar"
                         }
                     ]
                 },
@@ -774,12 +827,11 @@
                     "artifacts": [
                         {
                             "name": "flink-scala_2.12",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-scala_2.12/1.16.0/flink-scala_2.12-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-scala_2.12",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-scala_2.12/1.16.0/flink-scala_2.12-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e501d54180e0545712baf03f2aed5a094c741918"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-scala_2.12/1.16.0/flink-scala_2.12-1.16.0.jar"
                         }
                     ]
                 },
@@ -791,12 +843,11 @@
                     "artifacts": [
                         {
                             "name": "flink-streaming-scala_2.12",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.12/1.16.0/flink-streaming-scala_2.12-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-streaming-scala_2.12",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-streaming-scala_2.12/1.16.0/flink-streaming-scala_2.12-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "371d0eeb274d24d0510de53f01b8f0f863424927"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-streaming-scala_2.12/1.16.0/flink-streaming-scala_2.12-1.16.0.jar"
                         }
                     ]
                 },
@@ -808,12 +859,11 @@
                     "artifacts": [
                         {
                             "name": "flink-clients",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-clients/1.16.0/flink-clients-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-clients",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-clients/1.16.0/flink-clients-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7ad5d7052a4ba2bc431de44307164ab2b9d49777"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-clients/1.16.0/flink-clients-1.16.0.jar"
                         }
                     ]
                 },
@@ -825,12 +875,11 @@
                     "artifacts": [
                         {
                             "name": "flink-core",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-core/1.16.0/flink-core-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-core",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-core/1.16.0/flink-core-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "21dd7c9b321f64b0c4e59f5564d842a26f2e6fd1"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-core/1.16.0/flink-core-1.16.0.jar"
                         }
                     ]
                 },
@@ -842,12 +891,11 @@
                     "artifacts": [
                         {
                             "name": "flink-java",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-java/1.16.0/flink-java-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-java",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-java/1.16.0/flink-java-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "9be9bc532df7f0156de1b1735211273eeb99d322"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-java/1.16.0/flink-java-1.16.0.jar"
                         }
                     ]
                 },
@@ -859,7 +907,11 @@
                     "artifacts": [
                         {
                             "name": "flink-shaded-asm-9",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f89d00906d3ffcf97b049cdc6d6e70dcb101a4cd"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar"
                         }
                     ]
                 },
@@ -888,12 +940,11 @@
                     "artifacts": [
                         {
                             "name": "chill_2.12",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6.jar"
-                        },
-                        {
-                            "name": "chill_2.12",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "37ab91c4029e8c34f39bfc6c2c7735ba69c6f53f"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/twitter/chill_2.12/0.7.6/chill_2.12-0.7.6.jar"
                         }
                     ]
                 },
@@ -905,12 +956,11 @@
                     "artifacts": [
                         {
                             "name": "flink-streaming-java",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-streaming-java",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f568ee053b0c4da0c85dd12978652eef079aaef7"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-streaming-java/1.16.0/flink-streaming-java-1.16.0.jar"
                         }
                     ]
                 },
@@ -922,12 +972,11 @@
                     "artifacts": [
                         {
                             "name": "flink-runtime",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-runtime/1.16.0/flink-runtime-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-runtime",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-runtime/1.16.0/flink-runtime-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "07c2219e20b25bf7b477ca0b137e366934ad6178"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-runtime/1.16.0/flink-runtime-1.16.0.jar"
                         }
                     ]
                 },
@@ -939,12 +988,11 @@
                     "artifacts": [
                         {
                             "name": "flink-optimizer",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-optimizer/1.16.0/flink-optimizer-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-optimizer",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-optimizer/1.16.0/flink-optimizer-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4b2675254685ec940cafeea5706ed94518570978"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-optimizer/1.16.0/flink-optimizer-1.16.0.jar"
                         }
                     ]
                 },
@@ -956,12 +1004,11 @@
                     "artifacts": [
                         {
                             "name": "commons-cli",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar"
-                        },
-                        {
-                            "name": "commons-cli",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "dc98be5d5390230684a092589d70ea76a147925c"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar"
                         }
                     ]
                 },
@@ -973,12 +1020,11 @@
                     "artifacts": [
                         {
                             "name": "flink-annotations",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.16.0/flink-annotations-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-annotations",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-annotations/1.16.0/flink-annotations-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ef8d09245c39f1c08822815562a0f8290ac18cdd"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-annotations/1.16.0/flink-annotations-1.16.0.jar"
                         }
                     ]
                 },
@@ -990,12 +1036,11 @@
                     "artifacts": [
                         {
                             "name": "flink-metrics-core",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.16.0/flink-metrics-core-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-metrics-core",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-metrics-core/1.16.0/flink-metrics-core-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b37eff23af0a79bc1415f2a1ec57d9c65b274124"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-metrics-core/1.16.0/flink-metrics-core-1.16.0.jar"
                         }
                     ]
                 },
@@ -1007,7 +1052,11 @@
                     "artifacts": [
                         {
                             "name": "flink-shaded-jackson",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-jackson/2.12.4-15.0/flink-shaded-jackson-2.12.4-15.0.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d22af0ed8a70f2b8a9b3ce25644c9eb0a1e28b41"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-jackson/2.12.4-15.0/flink-shaded-jackson-2.12.4-15.0.jar"
                         }
                     ]
                 },
@@ -1019,12 +1068,11 @@
                     "artifacts": [
                         {
                             "name": "commons-lang3",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"
-                        },
-                        {
-                            "name": "commons-lang3",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "90a3822c38ec8c996e84c16a3477ef632cbc87a3"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"
                         }
                     ]
                 },
@@ -1036,12 +1084,11 @@
                     "artifacts": [
                         {
                             "name": "kryo",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar"
-                        },
-                        {
-                            "name": "kryo",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "0c6b206e80cfd97e66a1364003724491c757b92f"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar"
                         }
                     ]
                 },
@@ -1069,12 +1116,11 @@
                     "artifacts": [
                         {
                             "name": "commons-compress",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar"
-                        },
-                        {
-                            "name": "commons-compress",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.21/commons-compress-1.21-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "4ec95b60d4e86b5c95a0e919cb172a0af98011ef"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar"
                         }
                     ]
                 },
@@ -1086,7 +1132,11 @@
                     "artifacts": [
                         {
                             "name": "flink-shaded-guava",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bd226b0497e69b57de5c9868cbf5489a573d52a9"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar"
                         }
                     ]
                 },
@@ -1098,12 +1148,11 @@
                     "artifacts": [
                         {
                             "name": "commons-math3",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar"
-                        },
-                        {
-                            "name": "commons-math3",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar"
                         }
                     ]
                 },
@@ -1115,12 +1164,11 @@
                     "artifacts": [
                         {
                             "name": "chill-java",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar"
-                        },
-                        {
-                            "name": "chill-java",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill-java/0.7.6/chill-java-0.7.6-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a74b8d019d6941d82ff86d1612e382f4a0ae8259"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar"
                         }
                     ]
                 },
@@ -1149,12 +1197,11 @@
                     "artifacts": [
                         {
                             "name": "flink-file-sink-common",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-file-sink-common/1.16.0/flink-file-sink-common-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-file-sink-common",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-file-sink-common/1.16.0/flink-file-sink-common-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1360a4844e248f858599beb3f858d028befad0b8"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-file-sink-common/1.16.0/flink-file-sink-common-1.16.0.jar"
                         }
                     ]
                 },
@@ -1166,12 +1213,11 @@
                     "artifacts": [
                         {
                             "name": "flink-rpc-core",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-rpc-core/1.16.0/flink-rpc-core-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-rpc-core",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-rpc-core/1.16.0/flink-rpc-core-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a4125ed7cb1258f262a55c4cd18a6a0042dbd29a"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-rpc-core/1.16.0/flink-rpc-core-1.16.0.jar"
                         }
                     ]
                 },
@@ -1183,12 +1229,11 @@
                     "artifacts": [
                         {
                             "name": "flink-rpc-akka-loader",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-rpc-akka-loader/1.16.0/flink-rpc-akka-loader-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-rpc-akka-loader",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-rpc-akka-loader/1.16.0/flink-rpc-akka-loader-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "33461c52d834a9df4b3a96677f28d95a4493f587"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-rpc-akka-loader/1.16.0/flink-rpc-akka-loader-1.16.0.jar"
                         }
                     ]
                 },
@@ -1200,12 +1245,11 @@
                     "artifacts": [
                         {
                             "name": "flink-queryable-state-client-java",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.16.0/flink-queryable-state-client-java-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-queryable-state-client-java",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-queryable-state-client-java/1.16.0/flink-queryable-state-client-java-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1cbdd30b6800f488a36fe78209b50207ad788375"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-queryable-state-client-java/1.16.0/flink-queryable-state-client-java-1.16.0.jar"
                         }
                     ]
                 },
@@ -1217,12 +1261,11 @@
                     "artifacts": [
                         {
                             "name": "flink-hadoop-fs",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.16.0/flink-hadoop-fs-1.16.0.jar"
-                        },
-                        {
-                            "name": "flink-hadoop-fs",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-hadoop-fs/1.16.0/flink-hadoop-fs-1.16.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3249390024ea53afc716984dc57d59b1e4d98888"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-hadoop-fs/1.16.0/flink-hadoop-fs-1.16.0.jar"
                         }
                     ]
                 },
@@ -1234,12 +1277,11 @@
                     "artifacts": [
                         {
                             "name": "commons-io",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar"
-                        },
-                        {
-                            "name": "commons-io",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "a2503f302b11ebde7ebc3df41daebe0e4eea3689"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar"
                         }
                     ]
                 },
@@ -1251,7 +1293,11 @@
                     "artifacts": [
                         {
                             "name": "flink-shaded-netty",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-netty/4.1.70.Final-15.0/flink-shaded-netty-4.1.70.Final-15.0.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "fb7b17dc76a1517b16bc49fc11000e26a5ea62c8"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-netty/4.1.70.Final-15.0/flink-shaded-netty-4.1.70.Final-15.0.jar"
                         }
                     ]
                 },
@@ -1263,7 +1309,11 @@
                     "artifacts": [
                         {
                             "name": "flink-shaded-zookeeper-3",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/flink/flink-shaded-zookeeper-3/3.5.9-15.0/flink-shaded-zookeeper-3-3.5.9-15.0.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "6bbb257d9fa7421c0e6ab3b67e7065f0820c3df2"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/apache/flink/flink-shaded-zookeeper-3/3.5.9-15.0/flink-shaded-zookeeper-3-3.5.9-15.0.jar"
                         }
                     ]
                 },
@@ -1275,12 +1325,11 @@
                     "artifacts": [
                         {
                             "name": "javassist",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar"
-                        },
-                        {
-                            "name": "javassist",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "d7466fc2e3af7c023e95c510f06448ad29b225b3"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar"
                         }
                     ]
                 },
@@ -1292,12 +1341,11 @@
                     "artifacts": [
                         {
                             "name": "minlog",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar"
-                        },
-                        {
-                            "name": "minlog",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "59bfcd171d82f9981a5e242b9e840191f650e209"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar"
                         }
                     ]
                 },
@@ -1309,12 +1357,11 @@
                     "artifacts": [
                         {
                             "name": "objenesis",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1.jar"
-                        },
-                        {
-                            "name": "objenesis",
-                            "classifier": "sources",
-                            "path": "/home/sabrinacs/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar"
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "87c0ea803b69252868d09308b4618f766f135a96"
+                            },
+                            "path": "/home/sabrinacs/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar"
                         }
                     ]
                 },

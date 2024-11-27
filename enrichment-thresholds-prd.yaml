@@ -1,0 +1,67 @@
+apiVersion: flink.apache.org/v1beta1
+kind: FlinkDeployment
+metadata:  
+  labels:
+    gitops.application.instance: flink-enrichment-threshold
+  name: flink-thresholds-enrichment  
+spec:
+  flinkConfiguration:
+    logging.level: DEBUG
+    checkpointing.interval: "10000"
+    checkpointing.mode: exactly_once
+    env.java.opts: -XX:+UnlockCommercialFeatures -XX:+UnlockDiagnosticVMOptions -XX:+FlightRecorder
+      -XX:+DebugNonSafepoints -XX:StartFlightRecording=disk=false,dumponexit=true,filename='/tmp/flight.jfr',settings=profile,path-to-gc-roots=true,duration=1h
+    execution.checkpointing.externalized-checkpoint-retention: RETAIN_ON_CANCELLATION
+    execution.checkpointing.interval: 5m
+    execution.checkpointing.min-pause: 2m
+    execution.checkpointing.timeout: 2m
+    restart-strategy.fixed-delay.attempts: "3"
+    restart-strategy.fixed-delay.delay: 10s
+    restart-strategy.type: fixed-delay
+    s3.access-key: ZZkUZOXKTAOkiSBz00HJ
+    s3.bucket-name: flink-data
+    s3.endpoint: http://minio.panda-symphony.svc.cluster.local:9000
+    s3.secret-key: ae9JkCInyI2ibkbxWK4iHgiGzpO4Rlr0YDdNlj0m
+    state.backend: rocksdb
+    state.backend.incremental: "true"
+    state.checkpoints.dir: s3://flink-data/flink-thresholds-enrichment24/checkpoints
+    state.savepoints.dir: s3://flink-data/flink-thresholds-enrichment24/savepoints
+  flinkVersion: v1_16
+  #image: quay.apps.mgmt.tdigital-vivo.com.br/panda/panda-thresholds-enrichment:1.0.0
+  image: quay.apps.mgmt.tdigital-vivo.com.br/panda_pipelines0/panda-thresholds-enrichment-prod:0.0.13
+  job:
+    jarURI: local:////opt/flink/app/flink-enrichment.jar
+    parallelism: 10
+    savepointTriggerNonce: 0
+    state: running
+    upgradeMode: savepoint
+  jobManager:
+    replicas: 1
+    resource:
+      cpu: 2
+      memory: 16084m
+  podTemplate:
+    apiVersion: v1
+    kind: Pod
+    spec:
+      containers:
+      - name: flink-main-container
+        volumeMounts:
+        - name: kafka-keystore
+          mountPath: /flink/kafka
+        readOnly: false
+      imagePullSecrets:
+      #- name: quay-secret-flink
+      - name: quay-flink-thresholds-enrichment
+      volumes:
+      - name: kafka-keystore
+        secret:
+          items:
+          - key: keystore.jks
+            path: keystore.jks
+          secretName: kafka-keystore-prod
+  serviceAccount: flink-prod
+  taskManager:
+    resource:
+      cpu: 1
+      memory: 2048m

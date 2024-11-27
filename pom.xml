@@ -1,0 +1,238 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nttdata</groupId>
+  <artifactId>enrichment</artifactId>
+  <version>1.0</version>
+  <name>${project.artifactId}</name>
+  <description>Myscala app</description>
+  <inceptionYear>2018</inceptionYear>
+  <licenses>
+    <license>
+      <name>My License</name>
+      <url>http://....</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <encoding>UTF-8</encoding>
+    <scala.version>2.12.15</scala.version>
+    <scala.compat.version>2.12</scala.compat.version>
+    <spec2.version>4.2.0</spec2.version>
+    <flink.version>1.16.0</flink.version>
+    <flink.scope>compile</flink.scope>
+    <jackson.version>2.9.8</jackson.version>
+    <log4j.version>2.19.0</log4j.version>
+    <slf4j.version>1.7.32</slf4j.version>
+    <jexl.version>3.2.1</jexl.version>
+
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>${scala.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-scala_${scala.compat.version}</artifactId>
+      <version>${flink.version}</version>
+      <scope>${flink.scope}</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-streaming-scala_${scala.compat.version}</artifactId>
+      <version>${flink.version}</version>
+      <scope>${flink.scope}</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-clients</artifactId>
+      <version>${flink.version}</version>
+      <scope>${flink.scope}</scope>
+    </dependency>   
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-connector-kafka</artifactId>
+      <version>${flink.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path</artifactId>
+      <version>2.6.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.json4s</groupId>
+      <artifactId>json4s-native_${scala.compat.version}</artifactId>
+      <version>4.0.3</version>
+    </dependency>       
+
+    <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-scala_${scala.compat.version}</artifactId>
+        <version>2.12.5</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-json</artifactId>
+            <version>1.16.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-json_2.12</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-native_2.12</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-jexl3</artifactId>
+            <version>${jexl.version}</version>
+        </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-s3-fs-presto -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-s3-fs-presto</artifactId>
+        <version>1.16.0</version>
+        <scope>provided</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-s3-fs-hadoop -->
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-s3-fs-hadoop</artifactId>
+        <version>1.16.0</version>
+        <scope>provided</scope>
+    </dependency>
+
+
+    <dependency>
+        <groupId>org.apache.flink</groupId>
+        <artifactId>flink-statebackend-rocksdb</artifactId>
+        <version>${flink.version}</version>
+    </dependency>      
+
+    <!-- Test -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.scalatest</groupId>
+      <artifactId>scalatest_${scala.compat.version}</artifactId>
+      <version>3.0.5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.specs2</groupId>
+      <artifactId>specs2-core_${scala.compat.version}</artifactId>
+      <version>${spec2.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.specs2</groupId>
+      <artifactId>specs2-junit_${scala.compat.version}</artifactId>
+      <version>${spec2.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/main/scala</sourceDirectory>
+    <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <!-- see http://davidb.github.com/scala-maven-plugin -->
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>3.3.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>testCompile</goal>
+            </goals>
+            <configuration>
+              <args>
+                <arg>-dependencyfile</arg>
+                <arg>${project.build.directory}/.scala_dependencies</arg>
+              </args>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.21.0</version>
+        <configuration>
+          <!-- Tests will be run with scalatest-maven-plugin instead -->
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+
+
+    <!-- Compila maven com todas as dependências no JAR: -->
+    <!-- Maven Shade Plugin -->
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <configuration>
+            <createDependencyReducedPom>false</createDependencyReducedPom>
+            <filters>
+                <filter>
+                    <artifact>*:*</artifact>
+                    <excludes>
+                        <exclude>META-INF/*.SF</exclude>
+                        <exclude>META-INF/*.DSA</exclude>
+                        <exclude>META-INF/*.RSA</exclude>
+                    </excludes>
+                </filter>
+            </filters>
+        </configuration>
+        <executions>
+            <execution>
+                <phase>package</phase>
+                <goals>
+                    <goal>shade</goal>
+                </goals>
+                <configuration>
+                    <shadedArtifactAttached>true</shadedArtifactAttached>
+                    <shadedClassifierName>shaded</shadedClassifierName>
+                    <transformers>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>com.nttdata.Pipelines.App</mainClass>
+                        </transformer>
+                    </transformers>
+
+                </configuration>
+            </execution>
+        </executions>
+    </plugin>      
+    </plugins>
+  </build>
+</project>
